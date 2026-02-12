@@ -80,6 +80,33 @@ input {
     color: white;
     transition: 0.3s ease;
 }
+.input-group {
+    position: relative;
+    margin: 6px 0;
+}
+* {
+    box-sizing: border-box;
+}
+.input-group input {
+    width: 100%;
+    padding-right: 70px;  /* space for unit */
+}
+#output {
+    width: 85%;              /* smaller than container */
+    display: block;
+    margin: 10px auto;       /* auto left-right = center */
+    text-align: center;      /* text center inside */
+}
+
+.unit {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 13px;
+    color: #fbbf24;
+    pointer-events: none;
+}
 
 input:focus {
     border-color: #f97316;
