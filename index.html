@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Gyroscope Simulator</title>
+<link rel="stylesheet" href="style.css">
+
+<!-- Three.js -->
+<script src="https://cdn.jsdelivr.net/npm/three@0.158.0/build/three.min.js"></script>
+</head>
+
+<body>
+<h1 class="title">Gyroscopic Couple</h1>
+
+<div class="container">
+
+    <p class="subtitle">Enter Values: </p>
+
+    <input type="number" id="I" placeholder="Moment of Inertia (I)">
+    <input type="number" id="omega" placeholder="Spin Velocity (ω)">
+    <input type="number" id="Omega" placeholder="Precession Velocity (Ω)">
+
+    <button onclick="calculate()">Calculate</button>
+    <input type="text" id="output" placeholder="Couple (C)" readonly>
+    <button onclick="applyMotion()">Apply</button>
+
+    <div class="btn-row">
+        <button onclick="stopMotion()">Stop</button>
+        <button onclick="resetMotion()">Reset</button>
+    </div>
+</div>
+<canvas id="canvas"></canvas>
+<script src="script.js"></script>
+</body>
+</html>
