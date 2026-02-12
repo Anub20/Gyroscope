@@ -16,9 +16,21 @@
 
     <p class="subtitle">Enter Values: </p>
 
-    <input type="number" id="I" placeholder="Moment of Inertia (I)">
-    <input type="number" id="omega" placeholder="Spin Velocity (ω)">
-    <input type="number" id="Omega" placeholder="Precession Velocity (Ω)">
+  <div class="input-group">
+    <input type="number" id="I" placeholder="Moment of Inertia">
+    <span class="unit">kg·m²</span>
+</div>
+
+<div class="input-group">
+    <input type="number" id="omega" placeholder="Spin Velocity">
+    <span class="unit">rpm</span>
+</div>
+
+<div class="input-group">
+    <input type="number" id="Omega" placeholder="Precession Velocity">
+    <span class="unit">rad/s</span>
+</div>
+
 
     <button onclick="calculate()">Calculate</button>
     <input type="text" id="output" placeholder="Couple (C)" readonly>
